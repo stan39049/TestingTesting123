@@ -16,7 +16,8 @@ class UniqueCollectionTest {
     // TODO 1: Write a test to ensure items can be added to the collection
     @Test
     fun addAnItem() {
-
+        collection.addItem(Item("item1"))
+        assert(collection.size() == 1) { "Item not added" }
     }
 
     // TODO 2: Write a test to ensure that only unique items can be added to the collection
